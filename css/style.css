@@ -1,0 +1,158 @@
+@charset "UTF-8";
+/*样式重置*/
+html { font-size: 62.5%; }
+
+/*页面样式开始*/
+html { overflow-y: scroll; }
+
+body { margin: 0 auto; color: #333; background-color: #fff; font-family: stheitisc-light; text-align: center; }
+
+p, dl, dt, dd, table, td, th, input, img, form, div, span, ul, ol, li, h1, h2, h3, h4, h5, h6, select, input { margin: 0; padding: 0; font-weight: normal; }
+
+img, iframe { border: none; }
+
+ul, li, ol { list-style: none; }
+
+img { vertical-align: middle; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+input { outline: none; }
+
+em, b, i, strong, cite, sub, sup, font { font-weight: normal; font-style: normal; font-size: 100%; }
+
+a { color: #646464; text-decoration: none; outline: none; }
+a:hover { color: rgba(0,0,0,.8); }
+
+.clearfix { zoom: 1; }
+.clearfix:before { content: ""; display: table; }
+.clearfix:after { content: ""; display: table; clear: both; }
+
+.clear { clear: both; }
+
+html { position: relative; overflow: auto; height: 100%; appearance: none; -webkit-appearance: none; /*去掉浏览器默认样式*/ -webkit-tap-highlight-color: transparent; -webkit-touch-callout: none; }
+
+textarea, input { border:none;background:none;resize: none; outline: none; appearance: none; -webkit-appearance: none; /*去掉浏览器默认样式*/ }
+
+body { min-height: 100%; background: #fff; overflow-x: hidden; -webkit-user-select: none; -webkit-text-size-adjust: 100%; /*关闭自动调整字体*/ -webkit-overflow-scrolling: touch; overflow-scrolling: touch; }
+
+.clearfix { zoom: 1; }
+
+.clearfix:after { content: ""; display: block; clear: both; }
+
+.fl{float: left;}
+.fr{float: right;}
+
+/*布局样式*/
+.wrap{width: 80%;margin: 0 auto;}
+.container{width: 90%;margin: 0 auto;}
+.container-full{width: 100%;overflow: hidden;}
+
+html,body .text-right{text-align: right;}
+html,body .text-left{text-align: left;}
+.mg-bottom{margin-bottom: 1.5em;}
+.mg-top{margin-top: 1.8em;}
+.mg-botttom-s{margin-bottom: 1em;}
+html,body .p-t-n{padding-top: 0;}
+html,body .p-b-n{padding-bottom: 0;}
+html,body .p-r-n{padding-right: 0;}
+
+html,body .bg-grey{background-color: #eaeaea;}
+html,body .bg-jewel{background-color: #16111d;}
+html,body .bg-golden{background-color: #ded7cc;}
+html,body .bg-silver{background-color: #e3e2df;}
+
+.icon{padding: 0.5em;}
+.icon-right{display: inline-block;vertical-align: top;}
+
+.color-white{color: #fff;}
+.color-grey{color: #848a8f;}
+.color-blue{color: #0888ff;}
+.color-red{color: #f7656f;}
+.color-purple{color: #6334e5;}
+.color-black1{color: #000;}
+.color-black2{color: #333;}
+.color-black3{color: #666;}
+.color-black4{color: #999;}
+.color-golden{color: #ffa81f;}
+
+.font01{font-size: 1.5rem;}
+.unline{border-bottom: 1px solid;}
+.warning{color: #f7656f;margin-top: -1em;}
+.hide{display: none;}
+.selected{font-size: 1.5rem;color: #848a8f;text-align: left;}
+.selected p{margin-bottom: 1em;}
+/*1px线*/
+.border-bom{ border-bottom: 1px solid #dedede;-webkit-transform: scaleY(0.4); transform: scaleY(0.4);}
+.line-height1{line-height: 0.75em;}
+
+
+/*header*/
+header{ display: -webkit-box;display: -webkit-flex;display: flex;justify-content:space-between;-webkit-box-align: center;align-items:center;height: 2.75em;line-height: 2.75em;font-size: 2rem;background: #393a3f;color: #fff;}
+
+
+/*登录*/
+.grey-p{line-height: 1.8em}
+
+/*会员详情*/
+.head{position: relative;}
+.head-img{position:absolute;right:1.4em;width: 3em;height: 3em;margin-top: -1em;}
+
+/*身份验证*/
+.step{margin-bottom: 4em;}
+.step li{display: inline-block;font-size: 1.5rem;margin: 0 1.5em}
+.step li span{display:inline-block;width: 2em;height: 2em;line-height:2em;border-radius: 50%;background: #dedede;color: #fff;}
+.step li p{color: #dedede;margin-top: 0.5em;}
+.step li.active span{background: #6fda3a;}
+.step li.active p{color: #333;}
+
+
+/*列表*/
+.item{ position:relative;display:table;width:100%;box-sizing:border-box;font-size: 1.5rem;padding: 1.2em;color: #666;white-space: nowrap;}
+.item .item-tit{ display:table-cell;min-width:4em;text-align: left;vertical-align:top;color:#000;font-weight:400;white-space: nowrap;  }
+.item .item-con{ display:table-cell; text-align: right;vertical-align: top;font-size: 1.5rem; }
+.addr{white-space: normal}
+
+.table{display: table;padding: 1.5em;}
+.td{display: table-cell;width: 1%;}
+
+/*VIP会员*/
+.vip-list{position:relative;background:#fff url("../images/VIP.png") center no-repeat;background-size: 70%;padding: 1.5em 0}
+.result-list{padding: 0.5em 0 1em; margin-top: 1em; margin-bottom: 3em;}
+.vip-list .item,.result-list .item{ width: auto;padding: 0.5em 1.2em 0;}
+
+
+/*输入框*/
+.from-group{position:relative;display:block;height:3em;line-height:3em;background-color: #f5f5f5;margin-bottom: 1em;font-size: 1.5rem;}
+.inp{width:100%;display: inline-block;padding-left:  0.5em;box-sizing:border-box;font-size: 1.5rem;}
+
+/*按钮*/
+.btn{border:none;background:#ccc;padding:0 1em;text-align: center;white-space: nowrap;vertical-align: middle;box-sizing: border-box;border-radius: 2px;}
+.btn:hover{opacity: 0.8;}
+.btn-box{position: absolute;top: 0;right: -1px;}
+
+.btn-submit{display:block;font-size: 2rem;background: #6334e5;color: #fff;padding:0.5em;margin: 1.8em 0;}
+
+.box-group{ top: 2em;right: 1.5em;}
+
+.edit .btn-grey{ border-color:#666;padding: 0.2em 0.5em;}
+.btn-grey { height: 3em;background: #eee;border: 1px solid #cccccc;font-size: 1.5rem;color: #333;}
+.btn-grey-group{height:2.6em;position: absolute;top:2em;right: 1.5em;}
+
+
+.btn-golden-group{position:absolute;bottom: 2.5em;right: 1.5em;}
+.btn-golden{ width: 4em;height: 2em;background: #f3eedb;font-size: 1.2rem;color: #333;border-radius: 14%;}
+
+/*会员信息*/
+.member{margin-bottom: 10em;}
+.photo{position: absolute;background-color:#eaeaea;width: 2.6em;height: 2.6em;border-radius: 50%;right: 1em;bottom: 0.5em;}
+.photo:before{position: absolute;right: 0.46em;top: 0.5em;font-size: 2rem;}
+
+/*日期控件*/
+.inp-date,.inp_select{display:inline-block;width: 80%;text-align: right;font-size: 1.5rem;vertical-align:top;color: #666;white-space: nowrap}
+.inp_select input{width:100%;display:inline-block;text-align: right;vertical-align: text-top;font-size: 1.5rem;}
+
+/*进度条*/
+.bar-member{background: #d8d8db;height: 2em;}
+.bar-member-progress{background: #6334e5;height: 2em;width: 10em;line-height: 2em;border-radius: 0 1em 1em 0;color: #fff;text-align: right;}
+.bar-member-progress span{margin-right: 1em;}
