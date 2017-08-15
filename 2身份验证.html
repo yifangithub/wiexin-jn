@@ -25,15 +25,15 @@
         <li><span>2</span><p>绑定成功</p></li>
     </ul>
     <div class="selected">
-        <p><i class="icon-selected color-purple"></i> 按会员手机号</p>
-        <p><i class="icon-unselected"></i> 按会员卡号</p>
+        <p><input type="radio" id="t1" name="typeNum" checked="checked" /><label for="t1"></label>按会员手机号</p>
+        <p><input type="radio" id="t2" name="typeNum" /><label for="t2"></label>按会员卡号</p>
     </div>
     <div class="clearfix from-group">
-        <input class="inp" type="text" placeholder="请输入会员手机号或会员卡号" />
-        <button class="btn btn-box btn-grey">身份验证</button>
+        <input class="inp" type="text" placeholder="请输入会员手机号或会员卡号" id="inp-text" />
+        <button class="btn btn-box btn-grey" id="id-yan">身份验证</button>
     </div>
-    <div class="text-left warning hide"><span><i class="icon-notice"></i> 无此用户，请确认号码是否正确</span></div>
-    <div class="text-left">
+    <div class="text-left warning hide" id="warning"><span><i class="icon-notice"></i> 无此用户，请确认号码是否正确</span></div>
+    <div class="text-left hide" id="text">
         <div class="color-black2 font01 text-left">验证结果</div>
         <ul class="result-list bg-grey">
             <li class="item"><strong class="item-tit">会员姓名:</strong>
@@ -49,10 +49,24 @@
                 <div class="item-con">186 * * * * 6767</div>
             </li>
         </ul>
-        <a href="javascript:;" class="btn btn-submit">确认</a>
+        <a href="2身份验证-发送验证码.html" class="btn btn-submit">确认</a>
     </div>
 
 </section>
 </body>
 <script src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('#id-yan').click(function(){
+            var val = $('#inp-text').val();
+            if(!val){
+                $('#warning').removeClass('hide');
+                $('#text').addClass('hide');
+            }else{
+                $('#text').removeClass('hide');
+                $('#warning').addClass('hide');
+            }
+        })
+    })
+</script>
 </html>

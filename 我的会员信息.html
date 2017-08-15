@@ -10,12 +10,23 @@
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <title>微信端-身份验证</title>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/font.css"/>
     <script type="text/javascript" src="js/mobileUtil.js"></script>
 </head>
 <body>
-<header>我的会员</header>
+<header>
+    <a href="javascript:;" class="icon icon-back color-white"></a>
+    <span>我的会员</span>
+    <a href="javascript:;" class="icon icon-menu color-white"></a>
+</header>
 <section class="container-full">
-    <ul class="vip-list">
+<!-- 
+不加背景颜色默认为白色：普卡
+bg-jewel：钻石卡
+bg-golden：金卡
+bg-silver：银卡
+ -->
+    <ul class="vip-list bg-jewel">
         <li class="item"><strong class="item-tit">会员姓名</strong>
 
             <div class="item-con">王大海</div>
@@ -25,7 +36,7 @@
             <div class="item-con">13800138888</div>
         </li>
         <li class="btn-box btn-grey-group">
-            <button class="btn btn-grey">查看更多</button>
+            <a href="我的会员信息-详情不完整.html" class="btn btn-grey">查看更多</a>
         </li>
         <li class="item"><strong class="item-tit">性&nbsp;&nbsp;别</strong>
 
@@ -45,10 +56,10 @@
         </li>
         <li class="item"><strong class="item-tit">发卡日期</strong>
 
-            <div class="item-con">2016-07-08<em>普卡</em></div>
+            <div class="item-con">2016-07-08</div>
         </li>
         <li class="btn-golden-group">
-            <button class="btn btn-golden">普卡</button>
+            <button class="btn btn-golden">钻石卡</button>
         </li>
     </ul>
     <div class="table bg-grey font01">
